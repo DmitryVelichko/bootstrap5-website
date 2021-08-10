@@ -1,0 +1,5 @@
+@media(min-width: 768px) { /* md breakpoint: 768 px; min-width: as long as it's over 768px*/
+    .news-input {
+        width: 50%;
+    }
+}
