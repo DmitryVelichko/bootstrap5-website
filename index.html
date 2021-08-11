@@ -10,11 +10,20 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
+
     <title>Coding Bootcamp</title>
   </head>
   <body>
@@ -361,7 +370,7 @@
                   class="rounded-circle mb-3"
                   alt=""
                 />
-                <h3 class="card-title mb-3">Jane Doe</h3>
+                <h3 class="card-title mb-3">Jane</h3>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Molestias itaque quidem nostrum delectus tempore?
@@ -382,7 +391,7 @@
                   class="rounded-circle mb-3"
                   alt=""
                 />
-                <h3 class="card-title mb-3">Ann Doe</h3>
+                <h3 class="card-title mb-3">Ann</h3>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Molestias itaque quidem nostrum delectus tempore?
@@ -403,7 +412,7 @@
                   class="rounded-circle mb-3"
                   alt=""
                 />
-                <h3 class="card-title mb-3">Karen Doe</h3>
+                <h3 class="card-title mb-3">Karen</h3>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Molestias itaque quidem nostrum delectus tempore?
@@ -424,7 +433,7 @@
                   class="rounded-circle mb-3"
                   alt=""
                 />
-                <h3 class="card-title mb-3">John Doe</h3>
+                <h3 class="card-title mb-3">Vanessa</h3>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Molestias itaque quidem nostrum delectus tempore?
@@ -458,21 +467,48 @@
                 <span class="fw-bold">Student Phone:</span> (555) 888-88-88
               </li>
               <li class="list-group-item">
-                <span class="fw-bold">Enrollment Email:</span> enroll@codecamp.camp
+                <span class="fw-bold">Enrollment Email:</span>
+                enroll@codecamp.camp
               </li>
               <li class="list-group-item">
-                <span class="fw-bold">Student Email:</span> student@codecamp.camp
+                <span class="fw-bold">Student Email:</span>
+                student@codecamp.camp
               </li>
             </ul>
+          </div>
+          <div class="col-md">
+            <div id="map"></div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2021 Frontend Bootcamp</p>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiZG1pdHJ5MTk4OTIwMjEiLCJhIjoiY2tzN211YjNyMG1nZDJucm5zcm1xYjFtbSJ9.ZpoEZZbhyrRjHmVww8sjQg";
+      var map = new mapboxgl.Map({
+        container: "map", // container ID
+        style: "mapbox://styles/mapbox/streets-v11", // style URL
+        center: [37.618423, 55.751244], // starting position
+        zoom: 15, // starting zoom
+      });
+      map.addControl(new mapboxgl.NavigationControl());
+    </script>
+
   </body>
 </html>
