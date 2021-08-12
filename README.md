@@ -16,6 +16,10 @@ Insturctors section:
 
 ![image](https://user-images.githubusercontent.com/42185328/129159998-27eab71b-4105-4f74-ad9a-fa9857d65438.png)
 
+Contact + Map(built with MapboxAPI) + Footer
+
+![image](https://user-images.githubusercontent.com/42185328/129160057-15a564f7-26e6-4e02-92fa-07bd4da4c8f8.png)
+
 
 
 
