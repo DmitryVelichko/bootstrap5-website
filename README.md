@@ -1,6 +1,6 @@
 Mobile responsive webiste built with Bootstrap 5 and Mapbox API.
 
-Check out the website online: https://dmitryvelichko.github.io/bootstrap5-website/
+[Check out the website online.](https://dmitryvelichko.github.io/bootstrap5-website/)
 
 Main screen: Navbar + Showcase + Newsletter
 
